@@ -34,7 +34,7 @@ border: none;
 position: relative;
 overflow: hidden;
 width: 100%;
-min-height:400px;
+
 height: auto; 
 background-color:#3c3c3c;
 
@@ -43,6 +43,7 @@ background-color:#3c3c3c;
 #site-canvas {
   width:100%;
   height: auto;
+  
   position: relative;
   background-color:#3c3c3c;
   border:4px;
@@ -77,7 +78,7 @@ background-color:#3c3c3c;
 }
 #site-menu {
   width:200px;
-  height: 400px;
+  height: 600px;
   position: absolute;
   top: 0;
   left: -200px;
@@ -116,13 +117,15 @@ background-color:#3c3c3c;
 #map-canvas {
    border:2px solid black;
    
-   border-radius: 30px;
+   
    box-shadow: 8px 8px 5px #777777;
    
    margin: 10px;
    margin-bottom: 20px;
    padding: 0;
    height: 500px;
+
+   
    width:100%;
    max-width: none;
 }
@@ -145,7 +148,48 @@ background-color:#3c3c3c;
 #siteNotice {
     color:black;
     background-color: rgba(15,15,15,0.7);
+    
 }
+
+.mapBtn
+{
+    color: #fff !important;
+	background-color: black;
+	
+	position: relative;
+	padding: .5em 1em;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	float:right;
+	cursor: pointer;
+	border: 2px solid #6e7376;
+	border-radius: .3em ;
+	text-decoration: NONE;
+	transition-duration: 0.4s;
+}
+.mapBtnn:hover
+{
+	color: #000000 !important;
+	background-color: white;
+}
+
+.mapBtn:focus
+{
+	color: #fff !important;
+	background-color: #3c3c3c;
+}
+
+.mapBtn:active
+{
+	color: #fff !important;
+	background-color: black;
+}
+
+
 
 
 #address-input {

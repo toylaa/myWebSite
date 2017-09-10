@@ -172,7 +172,7 @@ a .btn{
 	
 }
 
-.btn #mybutton
+.btn #mybutton, .btn
 {
 	color: #fff !important;
 	background-color: black;
@@ -192,13 +192,13 @@ a .btn{
 	transition-duration: 0.4s;
 }
 
-.btn #mybutton:hover
+.btn #mybutton:hover, .btn:hover
 {
 	color: #000000 !important;
 	background-color: white;
 }
 
-.btn #mybutton:focus
+.btn #mybutton:focus, .btn:Focus
 {
 	color: #fff !important;
 	background-color: #3c3c3c;
@@ -212,6 +212,8 @@ a .btn{
 	left:2px;
 	
 }
+
+
 
 .table
 {
