@@ -11,6 +11,7 @@ body {
   background-color: #3c3c3c;
   color: #fff;
 }
+
 ul {
     list-style-position: inside;
     padding-left:3px;
@@ -34,7 +35,7 @@ border: none;
 position: relative;
 overflow: hidden;
 width: 100%;
-
+min-height: 600px;
 height: auto; 
 background-color:#3c3c3c;
 
@@ -43,6 +44,8 @@ background-color:#3c3c3c;
 #site-canvas {
   width:100%;
   height: auto;
+  min-height: 600px;
+  
   
   position: relative;
   background-color:#3c3c3c;
@@ -67,8 +70,6 @@ background-color:#3c3c3c;
   
 }
 
-
-
 .show-nav #site-canvas {
   -webkit-transform: translateX(200px);
   transform: translateX(200px);
@@ -78,7 +79,7 @@ background-color:#3c3c3c;
 }
 #site-menu {
   width:200px;
-  height: 600px;
+  height: auto;
   position: absolute;
   top: 0;
   left: -200px;
@@ -171,7 +172,7 @@ background-color:#3c3c3c;
 	text-decoration: NONE;
 	transition-duration: 0.4s;
 }
-.mapBtnn:hover
+.mapBtn:hover
 {
 	color: #000000 !important;
 	background-color: white;

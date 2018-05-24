@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
-<title>Sir Toylaa Montgomery's MapSnap</title>
+<title>Sir Toylaa Montgomery's Landing page</title>
 
 </head>
 <body>
@@ -20,16 +20,13 @@
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 <!-- GOOGLE MAPS API -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="../js/map.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/footerStyle.css">
-<link rel="stylesheet" type="text/css" href="css/buttonStyle.css">
-<link rel="stylesheet" type="text/css" href="css/wrapperStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/footerStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/buttonStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/wrapperStyle.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/toggleNav.js"></script>
-
-
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script type="text/javascript" src="../js/toggleNav.js"></script>
 
     
    <!-- site-wrapper  -->
@@ -38,37 +35,21 @@
 	  
 	  
 	  <!-- Navbar contents  -->
-	  <div w3-include-html="html/Header.html"></div>
-	  <script>
-      w3.includeHTML();
-    </script>
-	   
-	    
-	    <!-- togggleable Off-canvas screen contents(menu)  -->
-		<div id="site-menu" >
-			<h2>Menu</h2>
-			
-			<p class="lead">Things.</p>
-			
-			<ul>
-				<li><span>Things are listed here.</span></li>
-				<li></span>Cool things.</span></li>
-			</ul>
-		</div>
-
-		<a href="#" class="btn toggle-nav" ><i class="fa fa-cog"></i></a>
-		
+	   <?php
+			 include '../html/Header.html';
+			 include '../php/toggle-menu.php';
+		?>	   
 		
 <!-- Begginning of page contents  --> 
 
-<div id="mapContainer" class="container" style = "text-align: center;">
+    <div id="mapContainer" class="container" style = "text-align: center;">
       <div class="row" >
         <h2>Google Maps API, GeoCoding, and Map Controls</h2>
         
       </div>
       
     	<div class = "row center" style="width:100%;">
-       	Search a Location: <input type="text" size="40" id="address-input" style= "border-radius:5px;">
+       	Search ANY Location : <input type="text" size="40" id="address-input" style= "border-radius:5px;">
        	<a class="btn" onclick="searchAddress();">Search</a>
     	</div>
     	
@@ -81,26 +62,28 @@
         	<!-- Empty MAP Container -->
 				</div>
 			</div>
-		</div>
-		
-			<!-- Empty MAP Container -->
-		<div style="text-wrap:none;" class = "container" >
-			<div class="row" id="info-box">
-			  <div class="col-lg-8" style="display:center; margin:10px; padding: 20px;">
-  			  <h2>Details</h2>
+			
+			<div style="text-wrap:none;" class = "container" >
+			<div class="row" id="info-box" style="text-align: center; padding: 20px;">
+			  
   			  <h4>
-  			    <ul>This is a simple implementation of several related google API's.</ul>
-  			    
-  			      <li>Google Maps API</li>
-  			      <li>Google GeoCoding API</li>
-  			      <li>Google JavaScript API</li>
-  			   </ul> 
+  			    <ul>This is a simple implementation of several related Google API's.</ul>
+  			      
+  			      <li><a href="https://developers.google.com/maps/documentation/" target="_blank">Google Maps API </a></li>
+  			      <li><a href="https://developers.google.com/maps/documentation/geocoding/start" target="_blank">Google GeoCoding API</a></li>
+              <li><a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps JavaScript API</a></li>    			   
+  			     </ul> 
   			  </h4>
-			  </div>
+			  
 		  </div>
 		</div>
-
-
+			
+			
+			
+			
+			
+			
+		</div>
 <!-- END OF PAGE CONTENTS (Canvas) -->
 	  
 	  
@@ -109,8 +92,10 @@
 <!-- END OF PAGE (Wrapper)  -->
 </div>
 
-<div w3-include-html="html/Footer.html"></div>
-  
+
+  <?php 
+    include '../html/Footer.html';
+  ?>
 
 		
   <script async defer

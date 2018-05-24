@@ -1,5 +1,5 @@
 /*
-* Uses jQuery!!!!111one
+* Uses jQuery
 */
 
 
