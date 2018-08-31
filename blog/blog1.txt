@@ -1,0 +1,7 @@
+<!-- date -->
+11.30.17
+<!-- mini -->
+MINI article
+<!-- full -->
+FULL ARTICLE HERE YOO !
+<!-- done -->
