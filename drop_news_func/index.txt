@@ -1,0 +1,9 @@
+<div id="newsfeed_home" style="width:100%;max-height:370px;">
+						<table style="border:0px; cellpadding:0px; cellspacing:0px; width:100%;">
+						<?php
+						  include './framework/php/news_func.php';
+ 						  $news = news_all('mini');
+						  echo $news;
+						?>
+						</table>
+					</div>
